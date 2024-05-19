@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodieFinder</title>
+  
+</head>
+<body>
+  <header>
+    <nav id="drawer">
+      <div class="brand">
+        <a href="#">FoodieFinder</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+      </button>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()">open</span>
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main">
+        ...
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <a id="hamburger" href="#">☰</a>
+    <section class="hero">
+      <img src="./images/heros/hero-image_1.jpg" alt="Hero Image">
+    </section>
+
+    <section class="restaurant">
+      <h2>Explore Restaurants</h2>
+      <div class="restaurant-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 FoodieFinder</p>
+  </footer>
+
+  <a href="#main" class="skip-link">Skip to Content</a>
+
+  
+</body>
+</html>

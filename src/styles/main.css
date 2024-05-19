@@ -1,0 +1,228 @@
+/* Reset and General Styles */
+/* ... */
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+ 
+html, body, main {
+  height: 100%;
+  width: 100%;
+}
+ 
+#drawer {
+  width: 250px;
+  height: 100%;
+  position: absolute;
+  transform: translate(-250px, 0);
+  transition: transform 0.3s ease-in-out;
+  background-color:#111;
+}
+ 
+#drawer.open {
+  transform: translate(0,0)
+}
+ 
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+ 
+ 
+/* styling pendukung */
+ 
+main {
+  padding: 16px;
+}
+ 
+#drawer ul {
+  list-style-type: none;
+  padding: 0 16px;
+}
+ 
+#drawer li {
+  padding: 5px 0px;
+}
+ 
+#drawer a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+ 
+#hamburger {
+  font-size: 32px;
+  text-decoration: none;
+  color: black;
+}
+/* Navigation Bar */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.brand a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin-left: 1rem;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+/* Hero Element */
+.hero img {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Restaurants List */
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.restaurant-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.restaurant-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Skip to Content Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-menu li {
+    margin: 0.5rem 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+  }
+}
