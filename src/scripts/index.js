@@ -51,7 +51,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const navMenu = document.querySelector('.nav-menu');
 
   navToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('show');
+    if(navMenu.classList.contains("open")){
+      navMenu.setAttribute("class", "close");
+      openNav();
+    else{
+      navMenu.setAttribute("class", "open");
+      closeNav();
+    }
   });
 
    // Fungsi untuk mengecek lebar viewport
