@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
       navMenu.setAttribute("class", "open");
       closeNav();
     }
-  });
+  }});
 
    // Fungsi untuk mengecek lebar viewport
   function checkViewportWidth() {
